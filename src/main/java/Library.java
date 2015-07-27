@@ -8,4 +8,8 @@ public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
+
+    public String version() {
+        return "2.2";
+    }
 }
