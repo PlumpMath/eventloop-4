@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
+import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.*;
 
 /*
@@ -15,9 +16,9 @@ public class LibraryTest {
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
 
-    @Test public void shouldGetLibVersion() {
+    @Test public void shouldGetCurrentPID() {
         Library lib = new Library();
 
-        assertThat(lib.version(), is("2.2"));
+        assertThat(lib.processId(), not(0));
     }
 }
