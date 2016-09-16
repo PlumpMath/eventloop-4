@@ -1,13 +1,34 @@
-LibUV experiments
+libuv experiments
 -----------------------
 
-From java interact with libuv library
+###### Quick Check
 
-./gradlew shadowJar
+Just run the below command
 
+ ```
+ ./go
+ ```
 
-You need to pass the path the library if it is not installed in the system library path already.
+ ```
+ >>> loaded libuv version 1.6.1
+ ```
 
-You can easily do that with a system settings to java runtime, i.e.
+ ###### Notes
 
-java -Djava.library.path=./lib  -jar build/libs/eventloop-all.jar
+ From java interact with libuv library
+
+```
+ ./gradlew shadowJar
+```
+
+ You need to pass the path the library if it is not installed in the system library path already.
+
+ You can easily do that with a system settings to java runtime, i.e.
+
+```
+ java -Djava.library.path=./lib  -jar build/libs/eventloop-all.jar
+```
+
+ Here I have checked in locally build libuv in my machine (mac)
+
+ As of this writing, libuv can be installed using homebrew in mac.
